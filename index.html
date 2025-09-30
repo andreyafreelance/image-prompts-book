@@ -1,10 +1,98 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Prompts Book — download</title>
-<style>
-  body{font-family:system-ui,Segoe UI,Arial;max-width:760px;margin:6% auto;padding:20px}
-  .btn{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;border:1px solid #333}
-</style>
-<h1>Free book — Prompting for images</h1>
-<p>Спасибо за интерес! Ссылка на PDF ниже.</p>
-<p><a class="btn" href="./book.pdf" download>Скачать PDF (скачать напрямую)</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prompts Book — Free Download</title>
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .cover {
+      flex: 1;
+    }
+
+    .cover img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-download:hover {
+      background: #0056b3;
+    }
+
+    @media(max-width: 700px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cover, .details {
+        flex: none;
+        width: 100%;
+      }
+
+      .cover img {
+        max-width: 300px;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cover">
+      <img src="cover.png" alt="Book Cover">
+    </div>
+    <div class="details">
+      <h1>From Sketch to Shot: Writing Prompts That Work</h1>
+      <p>Discover practical tips and examples for crafting prompts for AI-generated images. Whether you’re a beginner or an advanced creator, this guide will help you improve your results and speed up your workflow.</p>
+      <a class="btn-download" href="From%20Sketch%20to%20Shot_Writing%20Prompts%20That%20Work.pdf" download>Download PDF</a>
+    </div>
+  </div>
+</body>
+</html>
+
